@@ -3,9 +3,48 @@
 body {
     font-family: 'Comfortaa', cursive;
 }
+
+
+/* homepage banner ------------------ */
+
+#banner {
+    background-image: url(./asset/wide2.png);
+    background-size: cover;
+    background-blend-mode:multiply;
+    margin-top: 80px !important;
+}
+
+#banner h1 {
+    font-family: 'Comic Neue', cursive;
+    font-weight: 700 !important;
+    color: rgb(255, 238, 0);
+    text-shadow: 3px 3px 2px #ff0000;
+}
+
+#banner p {
+    color: rgb(255, 255, 255);
+    font-weight: 700 !important;
+    text-shadow: 1px 1px 3px #ff0000;
+}
+
+/* hero display styles-------------- */
 .singleHeroContainer {
     padding: 0;
     margin: 40px !important;
+}
+
+@media (max-width: 600px) {
+    .singleHeroContainer {
+        padding: 0;
+        margin: 5px !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .singleHeroContainer {
+        padding: 0;
+        margin: 15px !important;
+    }
 }
 
 .card-img-top {
