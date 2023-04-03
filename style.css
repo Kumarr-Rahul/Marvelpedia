@@ -1,0 +1,9 @@
+.singleHeroContainer {
+    padding: 0;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 10rem;
+    object-fit:cover;
+}
