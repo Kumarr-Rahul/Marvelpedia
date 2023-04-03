@@ -45,16 +45,18 @@
 
   <!-- container for superhero list -->
   <div class="container-fluid mx-auto align-self-center">
-    <div class="mx-auto justify-content-evenly row" id="allSuperheroContainer">
+    <div class="mx-auto justify-content-center row" id="allSuperheroContainer">
 
       <!-- template for super hero -->
       <template id="templates">
-        <div class="card singleHeroContainer my-5" style="width: 10rem;">
+        <div class="card singleHeroContainer my-5" style="width: 14rem;">
           <img src="..." class="card-img-top heroImg" alt="...">
           <div class="card-body text-center">
             <h5 class="card-title  name">Card title</h5>
-            <button type="button" class="btn btn-outline-primary btn-sm col-12 info">More Info</button>
-            <button type="button" class="btn btn-danger btn-sm col-12 favourite">Favourite</button>
+            <div class="btnContainer">
+            <button type="button" class="btn btn-outline-primary btn-xs col-6 info">More Info</button>
+            <button type="button" class="btn btn-danger btn-xs col-6 favourite">Favourite</button>
+          </div>
             <!-- name, Info and favourite are user defined class-->
           </div>
         </div>

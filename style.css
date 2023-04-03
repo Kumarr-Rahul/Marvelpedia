@@ -1,9 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Comic+Neue:wght@400;700&display=swap');
+
+body {
+    font-family: 'Comfortaa', cursive;
+}
 .singleHeroContainer {
     padding: 0;
+    margin: 40px !important;
 }
 
 .card-img-top {
     width: 100%;
-    height: 10rem;
-    object-fit:cover;
+    height: 13rem;
+    /* object-fit:cover; */
+}
+
+.card-body {
+    padding: 10px !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content:space-between !important;
+}
+
+.card-body h5{
+    font-size: 18px;
+    font-family: 'Comic Neue', cursive;
+    font-weight: 700 !important;
+}
+
+.btnContainer{
+    display: flex !important;
+    justify-content: space-around !important;
+}
+
+.btnContainer .btn{
+    font-size: 0.65rem !important;
+    font-weight: 700 !important;
+    width: 80px !important;
+    margin-top: 15px !important;
 }
