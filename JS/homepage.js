@@ -60,11 +60,18 @@ function showCharacter(object) {
 
             /* local storage key is id of searched character and value is "object.data.results"*/
             let value = JSON.stringify(charactersArray[i]);
+            
+            /* checking if already added to favourite page */
+            let alertMessage;
+            if(localStorage.getItem(heroId) === null) {
+                alertMessage = "Succesfully! Added to Favourite";
+            }else {
+                alertMessage = "Already Added to Favourite";
+            }
+            
             localStorage.setItem(heroId, value);
-
-            let alertMessage = "Succesfully! Added to Favourite";
             alertModal(alertMessage);
-
+            
         })
     }
 
