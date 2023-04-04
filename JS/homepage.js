@@ -1,5 +1,3 @@
-// cf12923a2ae64fe7d337944ac322fa74
-// private key : 18f9f9f971b86a3b2b8b2fd9c62d15ac1a72154f
 
 let searchCharacter = document.querySelector('input[type="search"]');
 let searchButton = document.querySelector('button[type="submit"]');
