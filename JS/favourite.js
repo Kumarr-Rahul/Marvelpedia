@@ -24,7 +24,7 @@ function showData(keyValue) {
     // allSuperheroContainer.innerHTML = "";
 
     let heroId = keyValue.id;
-    console.log(heroId);
+    // console.log(heroId);
 
     let heroDetailsTemplate = template.content.querySelector('.singleHeroContainer');
 
