@@ -41,6 +41,13 @@ function showCharacter(object) {
     let heroDetailsTemplate = template.content.querySelector('.singleHeroContainer');
     
     let charactersArray = object.data.results;
+
+    /* no result found */
+    if(charactersArray.length == 0) {
+        alertResult("Sorry, No result found.");
+    }
+
+    // if(charactersArray === null)
     
     for(let i = 0; i < charactersArray.length; i++) {
         let heroId =  charactersArray[i].id;
@@ -84,10 +91,24 @@ function showCharacter(object) {
     }
 
 }
-
+/* alert notification for added to Favourite */
 function alertModal(alertMessage) {
     let toggle = document.getElementById("alertBox");
     toggle.innerText = alertMessage;
     toggle.className = "show";
+    setTimeout(function(){ toggle.className = toggle.className.replace("show", ""); }, 3000);
+}
+
+/* alert no result found */
+function alertResult(alertMessage) {
+    let toggle = document.getElementById("alertBox");
+    toggle.innerText = alertMessage;
+
+    toggle.style.backgroundColor = 'hsla(0, 100%, 58%, 0.9)';
+    toggle.style.minWidth = '300px';
+    toggle.style.padding = '20px';
+    toggle.className = "show";
+    toggle.style.bottom = '300px'
+
     setTimeout(function(){ toggle.className = toggle.className.replace("show", ""); }, 3000);
 }

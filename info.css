@@ -2,10 +2,13 @@
 
 
 body {
-    background-color: rgb(231, 205, 255);
+    /* background-color: rgb(231, 205, 255); */
     display: flex;
     align-items: center;
     font-family: 'Comfortaa', cursive;
+    background-image: url(https://images.hdqwalls.com/wallpapers/the-batman-red-theme-me.jpg);
+    background-size:cover;
+    opacity: 0.9;
 }
 
 
