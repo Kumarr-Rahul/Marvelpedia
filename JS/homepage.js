@@ -54,7 +54,7 @@ function showCharacter(object) {
 
         allSuperheroContainer.appendChild(heroDetails);
 
-        /* local storage for favourite page-------- */
+        /* setting local storage for favourite page when favourite button is clicked-------- */
         heroDetails.querySelector('.favourite').addEventListener('click', function(e) {
             e.preventDefault();
 
@@ -62,16 +62,17 @@ function showCharacter(object) {
             let value = JSON.stringify(charactersArray[i]);
             localStorage.setItem(heroId, value);
 
+            let alertMessage = "Succesfully! Added to Favourite";
+            alertModal(alertMessage);
+
         })
     }
 
 }
 
-function addFunction() {
-    var x = document.getElementById("snackbar");
-    x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-  }
-
-
-
+function alertModal(alertMessage) {
+    let toggle = document.getElementById("alertBox");
+    toggle.innerText = alertMessage;
+    toggle.className = "show";
+    setTimeout(function(){ toggle.className = toggle.className.replace("show", ""); }, 3000);
+}

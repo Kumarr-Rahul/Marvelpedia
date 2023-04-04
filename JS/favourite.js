@@ -54,6 +54,12 @@ function showData(keyValue) {
 
 }
 
+function alertModal() {
+    let toggle = document.getElementById("alertBox");
+    toggle.className = "show";
+    setTimeout(function(){ toggle.className = toggle.className.replace("show", ""); }, 3000);
+}
+
 
 
 
