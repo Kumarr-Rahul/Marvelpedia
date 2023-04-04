@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  
 
 
   <!-- NAV BAR with logo home,favourite and search bar ------start here-------->
@@ -27,11 +28,11 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto  mb-3 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Favourite</a>
+            <a class="nav-link active" aria-current="page" href="./favourite.html">Favourite</a>
           </li>
         </ul>
         <form id="navSearch" class="d-flex" role="search">
@@ -52,6 +53,7 @@
     </div>
   </div>
 
+  
   <!-- container for superhero list -->
   <div class="container-fluid mx-auto align-self-center">
     <div class="mx-auto justify-content-center row" id="allSuperheroContainer">
@@ -64,7 +66,7 @@
             <h5 class="card-title  name">Card title</h5>
             <div class="btnContainer">
             <button type="button" class="btn btn-outline-primary btn-xs col-6 info">More Info</button>
-            <button type="button" class="btn btn-danger btn-xs col-6 favourite">Favourite</button>
+            <button type="button" class="btn btn-danger btn-xs col-6 favourite" onclick="addFunction()">Favourite</button>
           </div>
             <!-- name, Info and favourite are user defined class-->
           </div>
@@ -74,16 +76,13 @@
     </div>
   </div>
 
-
-
-
-
+  <div id="snackbar">Succesfully! Added to Favourite</div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
     crossorigin="anonymous"></script>
-  <script src="homepage.js"></script>
+  <script src="./JS/homepage.js"></script>
 </body>
 
 </html>

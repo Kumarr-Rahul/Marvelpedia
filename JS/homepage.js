@@ -44,20 +44,34 @@ function showCharacter(object) {
     
     for(let i = 0; i < charactersArray.length; i++) {
         let heroId =  charactersArray[i].id;
-        console.log(charactersArray[i]);
+        // console.log(charactersArray[i]);
         
         /* adding template to DOM */
         let heroDetails = document.importNode(heroDetailsTemplate, true);
         heroDetails.querySelector('.name').innerHTML = charactersArray[i].name;
         let imgUrl = charactersArray[i].thumbnail.path + '.jpg';
         heroDetails.querySelector('.heroImg').src = imgUrl;
-        console.log(imgUrl);
 
         allSuperheroContainer.appendChild(heroDetails);
+
+        /* local storage for favourite page-------- */
+        heroDetails.querySelector('.favourite').addEventListener('click', function(e) {
+            e.preventDefault();
+
+            /* local storage key is id of searched character and value is "object.data.results"*/
+            let value = JSON.stringify(charactersArray[i]);
+            localStorage.setItem(heroId, value);
+
+        })
     }
 
-    
 }
+
+function addFunction() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  }
 
 
 

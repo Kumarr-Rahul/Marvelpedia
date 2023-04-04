@@ -77,3 +77,8 @@ body {
     width: 80px !important;
     margin-top: 15px !important;
 }
+
+/* hero display in favourite page ----------------- */
+.customTopMargin {
+    margin-top: 90px !important;
+}
