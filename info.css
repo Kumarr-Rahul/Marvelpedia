@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Comic+Neue:wght@400;700&display=swap');
 
-#moreInfoHeroContainer {
-    border: 2px solid red;
-    margin-top: 80px;
-    height: 100%;
-}
- 
+
 body {
     background-color: rgb(231, 205, 255);
     display: flex;
@@ -13,9 +8,31 @@ body {
     font-family: 'Comfortaa', cursive;
 }
 
+
+#moreInfoHeroContainer {
+    height: 100%;
+    margin: 50px !important;
+    margin-top: 100px !important;
+}
+
+/* responsive for mobile */
+@media (max-width: 600px) {
+    #moreInfoHeroContainer {
+        margin: 20px !important;
+        margin-top: 100px !important;
+    }
+}
+ 
+
+
 .card {
     margin: 0;
     padding: 0;
+}
+
+/* image */ 
+.heroImg{
+    height: 100%;
 }
 
 

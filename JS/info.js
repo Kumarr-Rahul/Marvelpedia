@@ -29,7 +29,10 @@ function showMoreInfo(object) {
         document.querySelector('.desc').innerHTML = characterDetails[0].description;
     }
 
+    document.querySelector('.charID').innerHTML = characterDetails[0].id;
     document.querySelector('.comicNo').innerHTML = characterDetails[0].comics.available;
+    document.querySelector('.seriesNo').innerHTML = characterDetails[0].series.available;
+    document.querySelector('.storiesNo').innerHTML = characterDetails[0].stories.available;
     
     
 
