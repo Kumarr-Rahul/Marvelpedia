@@ -52,6 +52,14 @@ function showData(keyValue) {
         
     });
 
+    /* event listener for more info button ------------------- */
+    heroDetails.querySelector('.info').addEventListener('click', function(e){
+        e.preventDefault();
+
+        localStorage.setItem('idKey', heroId);  /* key is idKey(string) and value heroId(e.g. 184728) */
+        window.location.assign('./info.html');
+    })
+
 }
 
 function alertModal() {
