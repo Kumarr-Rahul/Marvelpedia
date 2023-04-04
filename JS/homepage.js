@@ -35,6 +35,10 @@ let template = document.querySelector('#templates');
 
 function showCharacter(object) {
 
+    /* to show hero when reload => preserve data*/
+    let allHeroValue = JSON.stringify(object);
+    localStorage.setItem('homeHero', allHeroValue);
+
     /* remove all previous serached result */
     allSuperheroContainer.innerHTML = "";
 
@@ -78,6 +82,10 @@ function showCharacter(object) {
             
             localStorage.setItem(heroId, value);
             alertModal(alertMessage);
+
+            /* when favourite button clicked */
+            heroDetails.querySelector('.favourite').style.backgroundColor = '#00a06d';
+            heroDetails.querySelector('.favourite').innerHTML = 'Added';
             
         })
 
@@ -91,6 +99,13 @@ function showCharacter(object) {
     }
 
 }
+
+/* wehen page reload preserve data */
+let obj = localStorage.getItem('homeHero');
+let actualObj = JSON.parse(obj);
+showCharacter(actualObj);
+
+
 /* alert notification for added to Favourite */
 function alertModal(alertMessage) {
     let toggle = document.getElementById("alertBox");
