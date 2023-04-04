@@ -15,5 +15,22 @@
 
 function showMoreInfo(object) {
     let characterDetails = object.data.results;
-    console.log(characterDetails);
+    console.log(characterDetails[0]);
+
+    let imgUrl = characterDetails[0].thumbnail.path + '.jpg';
+    document.querySelector('.heroImg').src = imgUrl;
+    
+
+    document.querySelector('.name').innerHTML = characterDetails[0].name;
+
+    if(characterDetails[0].description == "") {
+        document.querySelector('.desc').innerHTML = 'Sorry description not available for this character';
+    }else {
+        document.querySelector('.desc').innerHTML = characterDetails[0].description;
+    }
+
+    document.querySelector('.comicNo').innerHTML = characterDetails[0].comics.available;
+    
+    
+
 }

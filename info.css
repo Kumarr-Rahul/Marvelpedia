@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Comic+Neue:wght@400;700&display=swap');
+
+#moreInfoHeroContainer {
+    border: 2px solid red;
+    margin-top: 80px;
+    height: 100%;
+}
+ 
+body {
+    background-color: rgb(231, 205, 255);
+    display: flex;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+.card {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* name of hero */
+h1{
+    font-family: 'Comic Neue', cursive;
+    font-weight: 700 !important;
+    text-shadow: 2px 2px 2px #ff0000;
+    display: inline-block;
+
+    border-bottom: 2px solid black;
+}
