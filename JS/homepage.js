@@ -33,7 +33,7 @@ let template = document.querySelector('#templates');
 
 function showCharacter(object) {
 
-    /* to show hero when reload => preserve data*/
+    /* to show hero when homepage reload => preserve data*/
     let allHeroValue = JSON.stringify(object);
     localStorage.setItem('homeHero', allHeroValue);
 
